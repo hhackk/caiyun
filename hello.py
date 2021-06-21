@@ -427,6 +427,13 @@ def handle_site(site2):
             continue
         title = article.xpath(site2.item_title).get().strip()
         url = article.xpath(site2.item_url).get()
+		
+        if url.find('https://i.hacking8.com/') != -1:
+            try:
+                req = requests.get(url, headers=headers, verify=False, allow_redirects=False, timeout=20)
+                url = req.headers['Location']
+            except:
+                pass
         if site2.item_date:
             date = article.xpath(site2.item_date).get()
             if date:
