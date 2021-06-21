@@ -52,7 +52,7 @@
   url: "https://i.hacking8.com/nodes/sec.today/"
   item: "//div[contains(@class, 'panel-body')]/table/tbody/tr"
   item_title: ".//div[@class='media-body']/pre/text()"
-  item_url: "concat('https://i.hacking8.com/', .//div[@class='link']/a/@href)"
+  item_url: "concat('https://i.hacking8.com', .//div[@class='link']/a/@href)"
   
 ---
   name: '微信公众号'
