@@ -50,7 +50,7 @@
 ---
   name: '腾讯玄武实验室'
   url: "https://i.hacking8.com/nodes/sec.today/"
-  item: "//div[@class='panel-body']/table/tbody/tr"
+  item: "//div[contains(@class, 'panel-body')]/table/tbody/tr"
   item_title: ".//div[@class='media-body']/pre/text()"
   item_url: ".//div[@class='link']/a/@href"
 ---
