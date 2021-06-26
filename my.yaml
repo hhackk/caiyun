@@ -148,3 +148,18 @@
   item_url: ".//div/h2//a/@href"
   item_date: ".//footer//li[3]/text()"
   item_ext.catalog: ".//li[@class='meta-category']/a/text()"  
+
+---
+  name: 'PortSwigger '
+  url: "https://portswigger.net/research"
+  item: "//div[contains(@class, 'section-dark-blue-dotted-full-width')]/div[contains(@class, 'widget-tile-container')]//a[contains(@class, 'tile-container')]"
+  item_title: "./span[contains(@class, 'tile-text1-alt')]/text()"
+  item_url: "concat('https://portswigger.net/research',./@href)"
+  item_date: "./span[contains(@class, 'tile-date')]/text()"   
+
+---
+  name: '公众号(黑客技术)'
+  url: "http://www.hackdig.com"
+  item: "//div[@id='bodyLeft']/div[contains(@class, 'postList')]/h2"
+  item_title: "./a/text()"
+  item_url: "./a/@href" 
