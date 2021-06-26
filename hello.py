@@ -432,8 +432,23 @@ def handle_site(site2):
             try:
                 req = requests.get(url, headers=headers, verify=False, allow_redirects=False, timeout=20)
                 url = req.headers['Location']
+                print("realurl:{}", url)
             except:
                 pass
+                
+        if url.find('http://www.hackdig.com') != -1:
+            try:
+                text_tmp = requests.get(url, headers=headers, verify=False, timeout=20).text
+                selector_tmp = Selector(text_tmp)
+                result = selector_tmp.xpath("//a[contains(@href, 'http://www.hackdig.com/go.php?rid=')]/text()")
+                realurl = result[0].get()
+                if (realurl.find('https://mp.weixin.qq.com/') != -1):
+                    url = realurl
+                else:
+                    continue                
+            except:
+                continue
+                
         if site2.item_date:
             date = article.xpath(site2.item_date).get()
             if date:
