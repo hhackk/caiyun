@@ -56,9 +56,9 @@
   
 ---
   name: '微信公众号'
-  url: "https://i.hacking8.com/nodes/wechatmp/"
+  url: "https://i.hacking8.com/nodes/doonsec"
   item: "//div[contains(@class, 'panel-body')]/table/tbody/tr"
-  item_title: ".//div[@class='media']//a/text()"
+  item_title: ".//div[@class='link']/a/text()"
   item_url: "concat('https://i.hacking8.com', .//div[@class='link']/a/@href)"
   
 ---
