@@ -30,7 +30,7 @@
 ---
   name: '安全客'
   url: "https://www.anquanke.com/"
-  item: "//div[contains(@class, 'article-item')]"
+  item: "//div[contains(@class, 'item-main')]"
   item_title: ".//div[@class='title']/a/text()"
   item_url: "concat('https://www.anquanke.com',.//div[@class='title']/a/@href)"
   item_ext.catalog: ".//div[@class='tag tag-gray']/span/text()"
