@@ -16,7 +16,7 @@
 ---
   name: '阿里先知'
   url: "https://xz.aliyun.com"
-  item: '//table/tr'
+  item: '//table/tbody/tr'
   item_title: ".//a[contains(@class, 'topic-title')]/text()"
   item_url: "concat('https://xz.aliyun.com',.//a[contains(@class, 'topic-title')]/@href)"
   item_ext.catalog: ".//p[@class='topic-info']//a[contains(@href, '/node/')]/text()"
