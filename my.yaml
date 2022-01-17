@@ -14,12 +14,19 @@
   item_date: ".//time[@class='fulldate']/@datetime"
   item_ext.catalog: ".//section[@class='post-meta']//a/text()"
 ---
-  name: '阿里先知'
-  url: "https://xz.aliyun.com"
-  item: '//table/tbody/tr'
-  item_title: ".//a[contains(@class, 'topic-title')]/text()"
-  item_url: "concat('https://xz.aliyun.com',.//a[contains(@class, 'topic-title')]/@href)"
-  item_ext.catalog: ".//p[@class='topic-info']//a[contains(@href, '/node/')]/text()"
+  name: '先知'
+  url: "https://i.hacking8.com/nodes/xianzhi/"
+  item: "//div[contains(@class, 'panel-body')]/table/tbody/tr"
+  item_title: ".//div[@class='media-body']/pre/text()"
+  item_url: "concat('https://i.hacking8.com', .//div[@class='link']/a/@href)"  
+####暂时不可用
+#---
+#  name: '阿里先知'
+#  url: "https://xz.aliyun.com"
+#  item: '//table/tbody/tr'
+#  item_title: ".//a[contains(@class, 'topic-title')]/text()"
+#  item_url: "concat('https://xz.aliyun.com',.//a[contains(@class, 'topic-title')]/@href)"
+#  item_ext.catalog: ".//p[@class='topic-info']//a[contains(@href, '/node/')]/text()"
 ---
   name: 'freebuf'
   url: "https://www.freebuf.com/"
