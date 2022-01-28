@@ -171,7 +171,7 @@
   item_title: "./a/text()"
   item_url: "./a/@href" 
   
-  ---
+---
   name: '先知(from hacking8)'
   url: "https://i.hacking8.com/nodes/xianzhi/"
   item: "//div[contains(@class, 'panel-body')]/table/tbody/tr"
