@@ -17,8 +17,8 @@
   name: '先知'
   url: "https://i.hacking8.com/nodes/xianzhi/"
   item: "//div[contains(@class, 'panel-body')]/table/tbody/tr"
-  item_title: ".//div[@class='media-body']/pre/text()"
-  item_url: "concat('https://i.hacking8.com', .//div[@class='link']/a/@href)"  
+  item_title: ".//div[@class='link']/a/text()"
+  item_url: "concat('https://i.hacking8.com', .//div[@class='link']/a/@href)" 
 ####暂时不可用
 #---
 #  name: '阿里先知'
@@ -170,10 +170,4 @@
   item: "//div[@id='bodyLeft']/div[contains(@class, 'postList')]/h2"
   item_title: "./a/text()"
   item_url: "./a/@href" 
-  
----
-  name: '先知(from hacking8)'
-  url: "https://i.hacking8.com/nodes/xianzhi/"
-  item: "//div[contains(@class, 'panel-body')]/table/tbody/tr"
-  item_title: ".//div[@class='link']/a/text()"
-  item_url: "concat('https://i.hacking8.com', .//div[@class='link']/a/@href)" 
+
