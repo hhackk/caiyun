@@ -60,13 +60,14 @@
   item: "//div[contains(@class, 'panel-body')]/table/tbody/tr"
   item_title: ".//div[@class='media-body']/pre/text()"
   item_url: "concat('https://i.hacking8.com', .//div[@class='link']/a/@href)"
-  
----
-  name: '微信公众号'
-  url: "https://i.hacking8.com/node/doonsec"
-  item: "//div[contains(@class, 'panel-body')]/table/tbody/tr"
-  item_title: ".//div[@class='link']/a/text()"
-  item_url: "concat('https://i.hacking8.com', .//div[@class='link']/a/@href)"
+
+# 太多了，先屏蔽
+#---
+#  name: '微信公众号'
+#  url: "https://i.hacking8.com/node/doonsec"
+#  item: "//div[contains(@class, 'panel-body')]/table/tbody/tr"
+#  item_title: ".//div[@class='link']/a/text()"
+#  item_url: "concat('https://i.hacking8.com', .//div[@class='link']/a/@href)"
   
 ---
   name: 'sec-wiki'
